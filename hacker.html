@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Space Shooter</title>
+  </head>
+  <style>
+    body {
+      width: 100%;
+      overflow: hidden;
+      background: url("matrix.jpg");
+      background-size: cover;
+    }
+    .board {
+      position: relative;
+      width: 500px;
+      height: 500px;
+      margin: 40px auto;
+      border: 2px solid white;
+      background-color: black;
+      overflow: hidden;
+    }
+
+    .hacker {
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      background: url("hacker.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      left: 50%;
+      bottom: 0px;
+    }
+
+    .bullets {
+      position: absolute;
+      bottom: 40px;
+      left: 51%;
+      width: 40px;
+      height: 40px;
+      background: url("hacked.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    .bitcoins {
+      position: absolute;
+      top: 0px;
+      width: 50px;
+      height: 50px;
+      background: url("bitcoin.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+    
+  </style>
+  <script src="hacker1.js" defer></script>
+  <body>
+    <div class="board">
+      <div class="bitcoins"></div>
+      <div class="hacker"></div>
+    </div>
+  </body>
+</html>
